@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf');
+}
+*{
+    -fx-font-family:'Poppins';
+}
+.div1{
+
+    -fx-background-radius:25;
+    -fx-border-radius:25;
+
+}
+.polygon{
+   -fx-fill:linear-gradient(to bottom, #3d26a5, #8d26a5);
+}
+.button{
+     -fx-background-color : linear-gradient(to bottom, #3d26a5, #8d26a5);
+     -fx-text-fill:#fff;
+     -fx-cursor:hand;
+     -fx-background-radius:18;
+     -fx-font-size:16;
+     -fx-font-weight:bold;
+}
+.button:hover .icon{
+    -fx-fill:linear-gradient(to bottom, #3d26a5, #8d26a5);
+ }
+.button:hover{
+    -fx-background-color : #fff;
+    -fx-text-fill:linear-gradient(to bottom, #3d26a5, #8d26a5);
+    -fx-border-radius:18;
+    -fx-border-color:linear-gradient(to bottom, #3d26a5, #8d26a5);
+     -fx-transition: all 1s ease;
+
+    /* -fx-effect: dropshadow(gaussian, rgba(217, 178, 110, 255), 10, 0, 0, 0); */
+}
+
+.date-picker{
+
+     -fx-background-insets: 0, 0 0 3 0;
+     -fx-background-color: transparent;
+     -fx-border-width: 0 0 0 0;
+     -fx-border-color: #DDD;
+
+     -fx-font-size:18;
+
+}
+.date-picker .arrow-button{
+
+
+     -fx-background-color:#DDD;
+     -fx-background-insets: 0, 0 0 3 0;
+     -fx-font-size:18;
+      -fx-border-radius:10;
+
+}
+.date-picker .cell{-fx-cursor:hand;}
+.date-picker:focused .arrow-button{
+
+    -fx-background-color:linear-gradient(to bottom, #3d26a5, #8d26a5);
+    -fx-text-fill:#000;
+    -fx-color:#000;
+    -fx-cursor:hand;
+     -fx-border-radius:10;
+
+}
+.text-field{
+
+
+       -fx-background-insets: 0, 0 0 3 0;
+       -fx-background-color: transparent;
+       -fx-border-width: 0 0 3 0;
+       -fx-border-color: #DDD;
+       -fx-padding:0 0 0 25 ;
+       -fx-font-size:18;
+}
+.text-field:focused{
+
+    -fx-border-color: linear-gradient(to bottom, #3d26a5, #8d26a5);
+    -fx-background-insets: 0, 0 0 3 0;
+    -fx-background-color: transparent;
+   -fx-border-width: 0 0 3 0;
+    -fx-padding:0 0 0 25 ;
+}
+
+.createAccountLabel{
+
+    -fx-cursor:hand;
+    -fx-font-size:14;
+    -fx-font-family:Verdana;
+    -fx-text-fill : #555;
+
+}
+.createAccountLabel:hover{
+    -fx-text-fill : #000;
+}
+

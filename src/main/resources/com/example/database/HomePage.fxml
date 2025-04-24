@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #eee;" styleClass="parent" stylesheets="@style/homepage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.HomePageController">
+    <children>
+      <AnchorPane layoutY="-10.0" prefHeight="710.0" prefWidth="1200.0">
+         <children>
+              <AnchorPane layoutY="119.0" prefHeight="578.0" prefWidth="80.0" styleClass="sidebar">
+                  <children>
+                      <Pane layoutY="-119.0" prefHeight="710.0" prefWidth="80.0" styleClass="sidebar">
+                          <children>
+                              <Label layoutX="12.0" layoutY="32.0" style="-fx-font-family: Broadway;" text="MEDIC" textAlignment="CENTER" textFill="#ffffff80">
+                                  <font>
+                                      <Font name="Broadway" size="16.0" />
+                                  </font>
+                                  <padding>
+                                      <Insets right="2.0" />
+                                  </padding>
+                              </Label>
+                              <HBox alignment="CENTER" layoutY="190.0" onMousePressed="#switchToMedicineTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                                  <children>
+                                      <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                          <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                                    <FontAwesomeIcon fill="WHITE" glyphName="FLASK" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="26.0" prefWidth="122.0" text="Medicines" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="11.7" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                          </children>
+                                      </HBox>
+                                  </children>
+                              </HBox>
+                        <HBox alignment="CENTER" layoutY="292.0" onMousePressed="#switchToDealersTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="PHONE" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="46.0" text="Dealers">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="490.0" onMousePressed="#switchToEmployeeTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="GROUP" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="26.0" prefWidth="122.0" text="Employee" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="590.0" onMousePressed="#switchToExpensesTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="SHOPPING_CART" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="26.0" prefWidth="122.0" text="Expenses" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="390.0" onMousePressed="#switchToDealingsTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="65.0" prefWidth="75.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="622.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="LINK" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="53.0" text="Dealings" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="90.0" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #3d2671;" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="HOME" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="37.0" text="Home" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                          </children>
+                      </Pane>
+                  </children>
+              </AnchorPane>
+                <Pane layoutY="10.0" prefHeight="66.0" prefWidth="1127.0" styleClass="fontawesomeicon" visible="false">
+                    <children>
+                        <FontAwesomeIcon glyphName="QUESTION_CIRCLE" layoutX="1070.0" layoutY="41.0" selectionFill="#aca8a8" size="1.5em" styleClass="fontawesomeicon" />
+                        <FontAwesomeIcon glyphName="GEAR" layoutX="1040.0" layoutY="41.0" size="1.5em" styleClass="fontawesomeicon" />
+                        <FontAwesomeIcon glyphName="BELL" layoutX="1010.0" layoutY="41.0" size="1.5em" styleClass="fontawesomeicon" />
+                        <FontAwesomeIcon glyphName="SEARCH" layoutX="977.0" layoutY="40.0" size="1.5em" styleClass="fontawesomeicon" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1023.0" layoutY="16.0" prefHeight="11.0" prefWidth="11.0" styleClass="noti-num" text="88">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            <ImageView fitHeight="513.0" fitWidth="838.0" layoutX="299.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@400103566_371894182009218_2895235878645022193_n.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_login" layoutX="474.0" layoutY="538.0" mnemonicParsing="false" onAction="#About" prefHeight="36.0" prefWidth="123.0" text="About" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_login1" layoutX="634.0" layoutY="538.0" mnemonicParsing="false" onAction="#SignOut" prefHeight="36.0" prefWidth="123.0" text="Sign Out" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="1131.0" layoutY="11.0" mnemonicParsing="false" onAction="#SignOut" prefHeight="36.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIcon fill="#3d26a5" glyphName="SIGN_OUT" size="1.5em">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </FontAwesomeIcon>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

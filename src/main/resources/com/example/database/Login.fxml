@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom, #3d26a5, #8d26a5);" stylesheets="@style/login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.LoginController">
+   <children>
+      <AnchorPane layoutX="587.0" layoutY="37.0" prefHeight="627.0" prefWidth="586.0" style="-fx-background-color: #eee; -fx-background-radius: 25;">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="68.63" radius="33.8125" width="68.62">
+               <color>
+                  <Color red="0.8684210777282715" green="0.8684210777282715" blue="0.8684210777282715" />
+               </color>
+            </Shadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="login_box" layoutX="587.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="580.0" minWidth="585.0" prefHeight="627.0" prefWidth="586.0" style="-fx-background-color: #FFF;" styleClass="div1">
+         <children>
+            <Button fx:id="btn_login" layoutX="184.0" layoutY="454.0" mnemonicParsing="false" onAction="#LoginFunc" prefHeight="45.0" prefWidth="249.0" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="usr_login" layoutX="147.0" layoutY="253.0" prefHeight="45.0" prefWidth="329.0" promptText="Username" styleClass="text_field">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <PasswordField fx:id="password_login" layoutX="155.0" layoutY="355.0" prefHeight="45.0" prefWidth="324.0" promptText="Password" styleClass="text_field">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon fx:id="user_icon" fill="#221c1c" glyphName="USER" layoutX="141.0" layoutY="283.0" size="22" />
+            <FontAwesomeIcon fx:id="lock_icon" fill="#221c1c" glyphName="LOCK" layoutX="147.0" layoutY="386.0" size="22" text="" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="165.0" minHeight="-Infinity" minWidth="596.0" prefHeight="42.0" prefWidth="596.0" style="-fx-font-family: Broadway;" text="WELCOME TO MEDIC" textAlignment="CENTER" textFill="#221c1c">
+               <font>
+                  <Font name="SansSerif Bold" size="30.0" />
+               </font></Label>
+            <Label fx:id="createAccountLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="191.0" layoutY="525.0" onMouseClicked="#createAccountVis" prefHeight="18.0" prefWidth="247.0" styleClass="createAccountLabel" text="Don't Have an Account?" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="myImg1" fitHeight="151.0" fitWidth="153.0" layoutX="233.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@111.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="myImg" fitHeight="530.0" fitWidth="672.0" layoutX="36.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@business-3d-opened-purple-blue-capsule-with-granules.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-62.0" layoutY="-9.0" prefHeight="683.0" prefWidth="523.0" visible="false">
+         <children>
+            <Polygon fill="#3d26a5" layoutX="357.0" layoutY="282.0" points="-210.0, 43.0, 27.0, 427.0, 286.0, -273.0" stroke="#3c27a3" strokeType="INSIDE" />
+            <Polygon fill="#3d26a5" layoutX="243.0" layoutY="114.0" points="46.0, 121.0, 400.0, -105.0, -181.0, -105.0" stroke="#3d26a5" strokeType="INSIDE" />
+            <Polygon fill="#3d26a5" layoutX="153.0" layoutY="537.0" points="-91.0, 172.0, 238.0, 172.0, 0.0, -214.0" stroke="#3d26a5" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3d26a5" height="691.0" layoutX="58.0" layoutY="6.0" stroke="#3d26a5" strokeType="INSIDE" width="231.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ca_box" layoutX="587.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="580.0" minWidth="585.0" prefHeight="627.0" prefWidth="586.0" style="-fx-background-color: #FFF;" styleClass="div1" visible="false">
+         <children>
+            <Button fx:id="btn_login1" layoutX="184.0" layoutY="523.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="45.0" prefWidth="249.0" text="Sign Up" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="SignUpusr" layoutX="151.0" layoutY="195.0" prefHeight="45.0" prefWidth="329.0" promptText="Username" styleClass="text_field">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <FontAwesomeIcon fx:id="user_icon1" fill="#221c1c" glyphName="USER" layoutX="146.0" layoutY="226.0" size="22" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="77.0" minHeight="-Infinity" minWidth="596.0" prefHeight="42.0" prefWidth="596.0" text="Create Your Account" textAlignment="CENTER">
+               <font>
+                  <Font name="SansSerif Bold" size="32.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="SignUpPassword" layoutX="150.0" layoutY="350.0" prefHeight="45.0" prefWidth="324.0" promptText="Password" styleClass="text_field">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon fx:id="lock_icon11" fill="#221c1c" glyphName="LOCK" layoutX="148.0" layoutY="381.0" size="22" text="" />
+            <PasswordField fx:id="SignUpPassword2" layoutX="150.0" layoutY="426.0" onKeyReleased="#checkPass" prefHeight="45.0" prefWidth="324.0" promptText="re-Password" styleClass="text_field">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIcon fx:id="lock_icon111" fill="#221c1c" glyphName="LOCK" layoutX="149.0" layoutY="456.0" size="22" text="" />
+            <DatePicker fx:id="SignUpBdate" layoutX="150.0" layoutY="272.0" prefHeight="45.0" prefWidth="330.0" promptText="Birthday" styleClass="date_picker" />
+            <FontAwesomeIcon fx:id="user_icon11" fill="#221c1c" glyphName="BIRTHDAY_CAKE" layoutX="144.0" layoutY="302.0" size="22" />
+            <Label fx:id="label_pass" layoutX="159.0" layoutY="481.0" prefHeight="17.0" prefWidth="196.0" text="The Password Is Matched" textFill="#195402" visible="false" />
+            <Label fx:id="label_pass2" layoutX="159.0" layoutY="481.0" prefHeight="17.0" prefWidth="196.0" text="The Password Is not Matched" textFill="#750303" visible="false" />
+            <Button layoutX="21.0" layoutY="568.0" mnemonicParsing="false" onAction="#createAccountdisVis" prefHeight="33.0" prefWidth="22.0" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BACKWARD" styleClass="icon" wrappingWidth="15.857142448425293" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

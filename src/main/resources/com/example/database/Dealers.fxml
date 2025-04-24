@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #eee;" styleClass="parent" stylesheets="@style/homepage.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.DealersController">
+    <children>
+      <AnchorPane layoutY="-10.0">
+         <children>
+              <AnchorPane layoutY="119.0" prefHeight="578.0" prefWidth="80.0" styleClass="sidebar">
+                  <children>
+                      <Pane layoutY="-119.0" prefHeight="710.0" prefWidth="80.0" styleClass="sidebar">
+                          <children>
+                              <Label layoutX="12.0" layoutY="32.0" style="-fx-text-fill: #fff; -fx-font-family: Broadway 16px;" text="MEDIC" textAlignment="CENTER" textFill="#ffffff80">
+                                  <font>
+                                      <Font name="Broadway" size="16.0" />
+                                  </font>
+                                  <padding>
+                                      <Insets right="2.0" />
+                                  </padding>
+                              </Label>
+                              <HBox alignment="CENTER" layoutY="190.0" onMousePressed="#switchToMedicineTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                                  <children>
+                                      <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                          <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                                    <FontAwesomeIcon fill="WHITE" glyphName="FLASK" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="62.0" text="Medicines" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="11.7" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                          </children>
+                                      </HBox>
+                                  </children>
+                              </HBox>
+                        <HBox alignment="CENTER" layoutY="292.0" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #3d2671;" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="PHONE" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="46.0" text="Dealers">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="490.0" onMousePressed="#switchToEmployeeTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="GROUP" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="26.0" prefWidth="122.0" text="Employee" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="590.0" onMousePressed="#switchToExpensesTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="SHOPPING_CART" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="56.0" text="Expenses" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="390.0" onMousePressed="#switchToDealingsTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="65.0" prefWidth="75.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="622.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="LINK" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="53.0" text="Dealings" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="90.0" onMousePressed="#switchToHomeTab" prefHeight="66.0" prefWidth="80.0" styleClass="boxtab">
+                           <children>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                       <children>
+                                          <FontAwesomeIcon fill="WHITE" glyphName="HOME" selectionFill="#4a3ca9" size="3em" styleClass="sidebar-btn" wrappingWidth="36.62855911254883">
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" />
+                                             </VBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                          <Label prefHeight="17.0" prefWidth="37.0" text="Home" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="1.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                          </children>
+                      </Pane>
+                  </children>
+              </AnchorPane>
+                <Pane layoutY="10.0" prefHeight="66.0" prefWidth="1127.0" styleClass="fontawesomeicon" visible="false">
+                    <children>
+                        <FontAwesomeIcon glyphName="QUESTION_CIRCLE" layoutX="1070.0" layoutY="41.0" selectionFill="#aca8a8" size="1.5em" styleClass="fontawesomeicon" />
+                        <FontAwesomeIcon glyphName="GEAR" layoutX="1040.0" layoutY="41.0" size="1.5em" styleClass="fontawesomeicon" />
+                        <FontAwesomeIcon glyphName="BELL" layoutX="1010.0" layoutY="41.0" size="1.5em" styleClass="fontawesomeicon" />
+                        <FontAwesomeIcon glyphName="SEARCH" layoutX="977.0" layoutY="40.0" size="1.5em" styleClass="fontawesomeicon" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1023.0" layoutY="16.0" prefHeight="11.0" prefWidth="11.0" styleClass="noti-num" text="88">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="MedicinePane" fx:id="SupplierPane" layoutX="105.0" layoutY="20.0">
+         <children>
+            <AnchorPane fx:id="medicineButton" layoutX="-20.0" layoutY="-20.0" prefWidth="1070.0">
+               <children>
+                  <AnchorPane layoutX="20.0" layoutY="43.0" prefHeight="618.0" prefWidth="663.0" style="-fx-background-color: #FFF; -fx-background-radius: 20;">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                           <color>
+                              <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <TableView fx:id="SuppliersTable" layoutX="6.0" layoutY="8.0" onMouseClicked="#getSupplierItem" prefHeight="628.0" prefWidth="656.0">
+                           <columns>
+                              <TableColumn fx:id="SupplierID" editable="false" prefWidth="50.0" sortable="false" text="ID" />
+                              <TableColumn fx:id="SupplierName" editable="false" prefWidth="124.0" sortable="false" text="Name" />
+                              <TableColumn fx:id="PhoneSupplier" editable="false" prefWidth="115.0" sortable="false" text="Phone" />
+                              <TableColumn fx:id="EmailSupplier" editable="false" prefWidth="127.0" sortable="false" text="Email" />
+                              <TableColumn fx:id="AddressSupplier" editable="false" prefWidth="116.0" sortable="false" text="Address" />
+                              <TableColumn fx:id="Scope" editable="false" prefWidth="116.0" sortable="false" text="Scope" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="723.0" layoutY="45.0" prefHeight="379.0" prefWidth="367.0" style="-fx-background-color: #FFF; -fx-background-radius: 20;">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                           <color>
+                              <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <TextField fx:id="SupplierIDtxtField" disable="true" editable="false" layoutX="42.0" layoutY="20.0" prefHeight="36.0" prefWidth="258.0" promptText="SupplierID" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="SupplierNametxtField" layoutX="42.0" layoutY="80.0" prefHeight="36.0" prefWidth="258.0" promptText="SupplierName" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="SupplierPhonetxtField" layoutX="42.0" layoutY="140.0" prefHeight="36.0" prefWidth="258.0" promptText="SupplierPhone" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="SupplierEmailtxtField" layoutX="42.0" layoutY="200.0" prefHeight="36.0" prefWidth="258.0" promptText="SupplierEmail" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="SupplierAddresstxtField" layoutX="42.0" layoutY="260.0" prefHeight="36.0" prefWidth="258.0" promptText="SupplierAddress" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <ComboBox fx:id="ScopetxtField" editable="true" focusTraversable="false" layoutX="42.0" layoutY="320.0" prefHeight="36.0" prefWidth="258.0" promptText="Scope" styleClass="combo_box" />
+                     </children>
+                  </AnchorPane>
+                  <CheckBox fx:id="checkLocalScope" layoutX="817.0" layoutY="585.0" mnemonicParsing="false" onAction="#SelectScopeLocal" prefHeight="21.0" prefWidth="194.0" style="-fx-font-weight: bold;" text="Suppliers With Local Scope" textFill="#5b5b5c">
+                     <font>
+                        <Font name="Agency FB" size="12.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkGlobalScope" layoutX="817.0" layoutY="622.0" mnemonicParsing="false" onAction="#SelectScopeGlobal" prefHeight="21.0" prefWidth="194.0" style="-fx-font-weight: bold;" text="Suppliers With Global Scope" textFill="#5b5b5c">
+                     <font>
+                        <Font name="Agency FB" size="12.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </AnchorPane>
+            <Button fx:id="addSupplierbtn" layoutX="760.0" layoutY="424.0" mnemonicParsing="false" onAction="#AddSupplier" prefHeight="35.0" prefWidth="90.0" styleClass="add-button" text="Add" textAlignment="CENTER" textFill="#06ae27">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="deleteSupplierbtn" layoutX="907.0" layoutY="424.0" mnemonicParsing="false" onAction="#DeleteSupplier" prefHeight="35.0" prefWidth="90.0" styleClass="delete-button" text="Delete" textAlignment="CENTER" textFill="#940a0a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="updateSupplierbtn" layoutX="907.0" layoutY="487.0" mnemonicParsing="false" onAction="#UpdateSupplier" prefHeight="35.0" prefWidth="90.0" styleClass="update-button" text="Update" textAlignment="CENTER" textFill="#ebbf11">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="searchSupplierbtn" layoutX="760.0" layoutY="487.0" mnemonicParsing="false" onAction="#showSearchSupply" prefHeight="35.0" prefWidth="90.0" styleClass="search-button" text="Search" textAlignment="CENTER" textFill="#13a3eb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="MedicinePane" fx:id="CustomersPane" layoutX="105.0" layoutY="20.0" visible="false">
+         <children>
+            <AnchorPane fx:id="medicineButton1" layoutX="-20.0" layoutY="-20.0" prefWidth="1070.0">
+               <children>
+                  <AnchorPane layoutX="20.0" layoutY="43.0" prefHeight="618.0" prefWidth="663.0" style="-fx-background-color: #FFF; -fx-background-radius: 20;">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                           <color>
+                              <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <TableView fx:id="CustomersTable" layoutX="6.0" layoutY="8.0" onMouseClicked="#getCustomerItem" prefHeight="628.0" prefWidth="656.0">
+                           <columns>
+                              <TableColumn fx:id="CustomerID" editable="false" prefWidth="50.0" sortable="false" text="ID" />
+                              <TableColumn fx:id="CustomerName" editable="false" prefWidth="124.0" sortable="false" text="Name" />
+                              <TableColumn fx:id="PhoneCustomer" editable="false" prefWidth="115.0" sortable="false" text="Phone" />
+                              <TableColumn fx:id="EmailCustomer" editable="false" prefWidth="127.0" sortable="false" text="Email" />
+                              <TableColumn fx:id="AddressCustomer" editable="false" prefWidth="116.0" sortable="false" text="Address" />
+                              <TableColumn fx:id="Discount" editable="false" prefWidth="116.0" sortable="false" text="Discount" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="723.0" layoutY="45.0" prefHeight="379.0" prefWidth="367.0" style="-fx-background-color: #FFF; -fx-background-radius: 20;">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                           <color>
+                              <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <TextField fx:id="CustomerIdtxtField" disable="true" layoutX="42.0" layoutY="20.0" prefHeight="36.0" prefWidth="258.0" promptText="CustomerID" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="CustomerNametxtField" layoutX="42.0" layoutY="80.0" prefHeight="36.0" prefWidth="258.0" promptText="CustomerName" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="CustomerPhonetxtField" layoutX="42.0" layoutY="140.0" prefHeight="36.0" prefWidth="258.0" promptText="CustomerPhone" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="CustomerEmailtxtField" layoutX="42.0" layoutY="200.0" prefHeight="36.0" prefWidth="258.0" promptText="CustomerEmail" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="CustomerAddresstxtField" layoutX="42.0" layoutY="260.0" prefHeight="36.0" prefWidth="258.0" promptText="CustomerAddress" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="DiscounttxtField" layoutX="42.0" layoutY="320.0" prefHeight="36.0" prefWidth="258.0" promptText="Discount" styleClass="text_field">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="745.0" layoutY="606.0" prefHeight="65.0" prefWidth="348.0" style="-fx-background-color: #FFF; -fx-background-radius: 20;">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                           <color>
+                              <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <AnchorPane layoutX="49.0" layoutY="14.0">
+                           <children>
+                              <TextField fx:id="LowerBetween" prefHeight="36.0" prefWidth="59.0" styleClass="text_field">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                              <TextField fx:id="UpperBetween" layoutX="190.0" onKeyReleased="#SearchBetween" prefHeight="36.0" prefWidth="59.0" styleClass="text_field">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                              <Label layoutX="87.0" layoutY="4.0" style="-fx-text-fill: linear-gradient(to bottom, #3d26a5, #8d26a5);" text="Between" textFill="#434343">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="738.0" layoutY="575.0" prefHeight="20.0" prefWidth="232.0" text="Select Customer With Discount:" textFill="#434343">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="addSupplierbtn1" layoutX="760.0" layoutY="424.0" mnemonicParsing="false" onAction="#AddCustomer" prefHeight="35.0" prefWidth="90.0" styleClass="add-button" text="Add" textAlignment="CENTER" textFill="#06ae27">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="deleteSupplierbtn1" layoutX="907.0" layoutY="424.0" mnemonicParsing="false" onAction="#DeleteCustomer" prefHeight="35.0" prefWidth="90.0" styleClass="delete-button" text="Delete" textAlignment="CENTER" textFill="#940a0a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="updateSupplierbtn1" layoutX="907.0" layoutY="487.0" mnemonicParsing="false" onAction="#UpdateCustomer" prefHeight="35.0" prefWidth="90.0" styleClass="update-button" text="Update" textAlignment="CENTER" textFill="#ebbf11">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="searchSupplierbtn1" layoutX="760.0" layoutY="487.0" mnemonicParsing="false" onAction="#showSearchCustomer" prefHeight="35.0" prefWidth="90.0" styleClass="search-button" text="Search" textAlignment="CENTER" textFill="#13a3eb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button id="medicineButtton" fx:id="SuppliersButton" layoutX="459.0" layoutY="4.0" mnemonicParsing="false" onAction="#showSupplier" prefHeight="30.0" prefWidth="110.0" styleClass="l1" text="Suppliers">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <Button id="catButton" fx:id="CustomersButton" layoutX="599.0" layoutY="4.0" mnemonicParsing="false" onAction="#showCustomer" prefHeight="30.0" prefWidth="110.0" styleClass="l1" text="Customers">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <DialogPane fx:id="dialog1" expanded="true" layoutX="419.0" layoutY="143.0" style="-fx-background-color: #FFF; -fx-background-radius: 15;" visible="false">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" spread="0.08" width="10.0">
+               <color>
+                  <Color red="0.8666666746139526" green="0.8666666746139526" blue="0.8666666746139526" />
+               </color>
+            </DropShadow>
+         </effect>
+         <content>
+            <AnchorPane prefHeight="341.0" prefWidth="384.0">
+               <children>
+                  <TextField fx:id="SupplierIDSearch" layoutX="76.0" layoutY="54.0" prefHeight="36.0" prefWidth="221.0" promptText="SupplierID" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="SupplierNameSearch" layoutX="76.0" layoutY="114.0" prefHeight="36.0" prefWidth="221.0" promptText="SupplierName" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="SupplierPhoneSearch" layoutX="76.0" layoutY="174.0" prefHeight="36.0" prefWidth="221.0" promptText="SupplierPhone" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="SupplierAdressSearch" layoutX="76.0" layoutY="234.0" prefHeight="36.0" prefWidth="221.0" promptText="SupplierAdress" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Button fx:id="ApplySearch" layoutX="90.0" layoutY="293.0" mnemonicParsing="false" onAction="#SearchSupplier" prefHeight="35.0" prefWidth="90.0" styleClass="add-button" text="Apply" textAlignment="CENTER" textFill="#06ae27">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="CancelSearch" layoutX="210.0" layoutY="293.0" mnemonicParsing="false" onAction="#closeSearchSupply" prefHeight="35.0" prefWidth="90.0" styleClass="delete-button" text="Cancel" textAlignment="CENTER" textFill="#940a0a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="144.0" layoutY="10.0" prefHeight="30.0" prefWidth="110.0" text="Search By">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </DialogPane>
+      <DialogPane fx:id="dialog2" expanded="true" layoutX="419.0" layoutY="143.0" style="-fx-background-color: #FFF; -fx-background-radius: 15;" visible="false">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" spread="0.08" width="10.0">
+               <color>
+                  <Color red="0.8666666746139526" green="0.8666666746139526" blue="0.8666666746139526" />
+               </color>
+            </DropShadow>
+         </effect>
+         <content>
+            <AnchorPane prefHeight="341.0" prefWidth="384.0">
+               <children>
+                  <TextField fx:id="CustomerIDSearch" layoutX="76.0" layoutY="54.0" prefHeight="36.0" prefWidth="221.0" promptText="CustomerID" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="CustomerNameSearch" layoutX="76.0" layoutY="114.0" prefHeight="36.0" prefWidth="221.0" promptText="CustomerName" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="CustomerPhoneSearch" layoutX="76.0" layoutY="174.0" prefHeight="36.0" prefWidth="221.0" promptText="CustomerPhone" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <TextField fx:id="CustomerAddressSearch" layoutX="76.0" layoutY="234.0" prefHeight="36.0" prefWidth="221.0" promptText="CustomerAddress" styleClass="text_field">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Button fx:id="ApplySearch1" layoutX="90.0" layoutY="293.0" mnemonicParsing="false" onAction="#SearchCustomer" prefHeight="35.0" prefWidth="90.0" styleClass="add-button" text="Apply" textAlignment="CENTER" textFill="#06ae27">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="CancelSearch1" layoutX="210.0" layoutY="293.0" mnemonicParsing="false" onAction="#closeSearchCustomer" prefHeight="35.0" prefWidth="90.0" styleClass="delete-button" text="Cancel" textAlignment="CENTER" textFill="#940a0a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="144.0" layoutY="10.0" prefHeight="30.0" prefWidth="110.0" text="Search By">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </DialogPane>
+    </children>
+</AnchorPane>
